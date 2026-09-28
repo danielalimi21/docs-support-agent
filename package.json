@@ -1,0 +1,26 @@
+{
+  "name": "docs-support-agent",
+  "version": "1.0.0",
+  "description": "A customer-support agent that answers only from your docs, cites every answer, and hands off to a human when it should.",
+  "scripts": {
+    "ask": "tsx src/cli.ts",
+    "serve": "tsx src/server.ts",
+    "eval": "tsx src/eval.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
