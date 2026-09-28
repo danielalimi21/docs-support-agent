@@ -8,6 +8,10 @@ can do.
 It ships with a fictional product, *Tallybook* (an invoicing app), whose help center
 lives in `docs/`. Point `DOCS_DIR` at your own Markdown files to use it for real.
 
+> **Status:** retrieval, response handling, grading and the HTTP server are covered by
+> automated tests (`npm test`, no API key needed). The live agent and the eval suite
+> (`npm run eval`) have not yet been run against the API from this repository.
+
 ## What it does
 
 - **Grounded answers with sources.** Each question retrieves the most relevant help
